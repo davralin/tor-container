@@ -4,7 +4,7 @@ LABEL Description="A container to contain tor"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends  \
-    obfs4-proxy     \
+    obfs4proxy      \
     socat           \
     tor             \
     tor-geoipdb     \
