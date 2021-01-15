@@ -12,4 +12,4 @@ RUN apt-get update \
     && \
     rm -rf /src/* /tmp/* /var/lib/apt/lists/*
 
-ENTRYPOINT ["/usr/bin/tor", "--defaults-torrc", "/usr/share/tor/tor-service-defaults-torrc", "-f", "/etc/tor/torrc", "--RunAsDaemon 0"]
+ENTRYPOINT ["/usr/bin/tor", "--defaults-torrc", "/usr/share/tor/tor-service-defaults-torrc", "-f", "/etc/tor/torrc", "--RunAsDaemon", "0"]
