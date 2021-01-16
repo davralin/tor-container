@@ -12,4 +12,4 @@ RUN apt-get update \
     && \
     rm -rf /src/* /tmp/* /var/lib/apt/lists/*
 
-ENTRYPOINT ["/bin/su", "-l", "-s", "/bin/sh", "debian-tor", "/usr/bin/tor", "-f", "/etc/tor/torrc"]
+ENTRYPOINT ["/bin/su", "-l", "-s", "/bin/sh", "debian-tor", "-c", "/usr/bin/tor", "-f", "/etc/tor/torrc"]
